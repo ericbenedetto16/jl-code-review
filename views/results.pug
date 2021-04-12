@@ -10,10 +10,10 @@
        <header>
             <nav>
                <ul class = "nav_links">
-                   <li><a href="addBill.html">Add a bill</a></li>
-                   <li><a href="bills.html">Bills</a></li>
-                   <li><a href="about.html">About us</a></li>
-                   <li><a href="logout">Logout</a></li>
+                   <li><a href="/bills/add">Add a bill</a></li>
+                   <li><a href="/bills">Bills</a></li>
+                   <li><a href="/about.html">About us</a></li>
+                   <li><a href="/logout">Logout</a></li>
                </ul>
             </nav>
        </header>
@@ -28,8 +28,8 @@
                 </tr>
                     each bill in bills
                         <tr>
-                            <td>#{bill.companyName}</td>
-                            <td>#{bill.dateDue}</td>
+                            <td>#{bill.company}</td>
+                            <td>#{bill.due_date}</td>
                             <td>#{bill.amount}</td>
                             <td>#{bill.description}</td>
                             <td>#{bill.link}</td>

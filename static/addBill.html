@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>csc430project</title>
-    <link rel = "stylesheet" href="./css/style.css">
-    <script src="./addbill.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>csc430project</title>
+        <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    </head>
     <body>
         <header>
-            <img class="logo" src="imges/logo.svg" alt="logo">
-                <nav>
-                    <ul class = "nav_links">
-                        <li><a href="addBill.html">Add a bill</a></li>
-                        <li><a href="bills.html">Bills</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a class="cta" href="#">contact</a></li>
-                        <li><a href="logout">Logout</a></li>
-                    </ul>
-                </nav>
-       </header>
-       <form  action="/" method="POST">
-           <div class="form">
+            <img class="logo" src="imges/logo.svg" alt="logo" />
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="/bills/add">Add a bill</a></li>
+                    <li><a href="/bills">Bills</a></li>
+                    <li><a href="/about.html">About us</a></li>
+                    <li><a class="cta" href="#">contact</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form action="/bills/add" method="POST">
+            <div class="form">
                 <label for="bill">Bill</label>
-                <input type="text" name="bill" id="bill">
+                <input type="text" name="bill" id="bill" />
 
                 <label for="companyName">Company Name</label>
-                <input type="text" name="companyName" id="companyName">
+                <input type="text" name="companyName" id="companyName" />
 
-                <label for="date" >Date</label>
-                <input type="date" name="date" id="date">
-           
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date" />
+
                 <label for="description">Description</label>
-                <input type="text" name="description" id="description">
+                <input type="text" name="description" id="description" />
 
                 <label for="amount">Amount</label>
-                <input type="number" min="0" name="amount" id="amount">
+                <input type="number" min="0" name="amount" id="amount" />
 
                 <label for="link">Link</label>
-                <input type="text" name="link" id="link">
-           </div>
+                <input type="text" name="link" id="link" />
+            </div>
             <button type="submit">submit</button>
-       </form>
+        </form>
     </body>
 </html>

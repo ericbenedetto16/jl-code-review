@@ -1,0 +1,5 @@
+- Plain-Text Passwords
+- Non-Sanitized SQL Queries
+- Nested Logic
+- Redundant Code
+- DRY
